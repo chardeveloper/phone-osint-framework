@@ -32,9 +32,9 @@ Esto levantará el servidor de desarrollo de Vite (generalmente en `http://local
 **2. Levantar el Proxy Forense (Backend Go)**
 Abre una nueva pestaña en tu terminal (sin cerrar la del frontend), ve a la raíz del proyecto y ejecuta:
 ```bash
-go run main.go
+go run main.go --web
 ```
-Esto iniciará el servidor backend que se comunicará con las APIs de OSINT.
+Esto iniciará el servidor backend en `http://localhost:5000`, el cual se comunicará con las APIs de OSINT.
 
 **3. Configuración BYOK (Bring Your Own Key)**
 - Abre tu navegador en la dirección que te dio Vite (`http://localhost:5173`).
