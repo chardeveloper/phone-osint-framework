@@ -57,6 +57,7 @@ func handleVeriphone(w http.ResponseWriter, r *http.Request) {
 	url := fmt.Sprintf("https://api.veriphone.io/v2/verify?phone=%s&key=%s", target, key)
 	resp, err := http.Get(url)
 	if err != nil {
+		w.Header().Set("Content-Type", "application/json")
 		http.Error(w, fmt.Sprintf(`{"error": "%v"}`, err), http.StatusInternalServerError)
 		return
 	}
@@ -78,6 +79,7 @@ func handleIPQS(w http.ResponseWriter, r *http.Request) {
 	url := fmt.Sprintf("https://www.ipqualityscore.com/api/json/phone/%s/%s?strictness=0", key, target)
 	resp, err := http.Get(url)
 	if err != nil {
+		w.Header().Set("Content-Type", "application/json")
 		http.Error(w, fmt.Sprintf(`{"error": "%v"}`, err), http.StatusInternalServerError)
 		return
 	}
@@ -93,7 +95,8 @@ func runCLI(target string) {
 
 func corsMiddleware(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Origin", "http://localhost:5173")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, X-Veriphone-Key, X-Ipqs-Key, X-Groq-Key")
 		if r.Method == "OPTIONS" {
 			w.WriteHeader(http.StatusOK)
