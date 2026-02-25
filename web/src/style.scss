@@ -1,0 +1,41 @@
+// @author CHAR DEV QUANTUM
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.bg-dark {
+  background-color: #0d1117 !important;
+}
+
+.bg-secondary {
+  background-color: #161b22 !important;
+}
+
+.border-secondary {
+  border-color: #30363d !important;
+}
+
+.text-primary {
+  color: #58a6ff !important;
+}
+
+.text-info {
+  color: #3fb950 !important;
+}
+
+.card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.btn-primary {
+  background-color: #1f6feb;
+  border-color: #1f6feb;
+  &:hover {
+    background-color: #388bfd;
+    border-color: #388bfd;
+  }
+}
