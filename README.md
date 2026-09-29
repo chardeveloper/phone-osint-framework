@@ -85,6 +85,5 @@ El código es totalmente libre. Cualquier desarrollador o investigador de OSINT 
 
 <div align="center">
 
-**Developed & maintained by**
 
 </div>
