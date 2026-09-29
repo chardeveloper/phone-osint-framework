@@ -77,7 +77,7 @@ Flujo de trabajo recomendado para una sesión OSINT completa:
 4. Puedes copiar o exportar el reporte desde la interfaz para incluirlo en tu expediente.
 
 ## 🤝 Colaboración y Mantenimiento
-Este framework nació como una investigación personal de ciberseguridad. Actualmente, debido a mis estudios universitarios, no dispongo del tiempo necesario para mantener el proyecto de forma activa a largo plazo.
+Este framework nació como una investigación personal de ciberseguridad. Actualmente, debido a mis estudios, no dispongo del tiempo necesario para mantener el proyecto de forma activa a largo plazo.
 
 El código es totalmente libre. Cualquier desarrollador o investigador de OSINT está invitado a hacer **Fork**, proponer **Pull Requests**, sumar nuevas APIs o tomar la posta del mantenimiento. Siéntanse libres de romper, mejorar y expandir este código.
 
@@ -86,11 +86,5 @@ El código es totalmente libre. Cualquier desarrollador o investigador de OSINT 
 <div align="center">
 
 **Developed & maintained by**
-
-### `@author CHAR DEV QUANTUM`
-
-*Seguridad Ofensiva · OSINT · Arquitectura Full-Stack*
-
-[![GitHub](https://img.shields.io/badge/GitHub-techniciandev-181717?style=for-the-badge&logo=github)](https://github.com/techniciandev)
 
 </div>
