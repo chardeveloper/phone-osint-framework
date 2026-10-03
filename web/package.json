@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "axios": "^1.13.5",
+    "axios": "^1.20.0",
     "bootstrap": "^5.3.8",
     "sass": "^1.97.3",
     "vue": "^3.5.25"
